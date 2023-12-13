@@ -40,3 +40,8 @@ body {
     flex-flow: column;
     align-items: center;
 }
+
+#current_drink img {
+    max-width: 75vw;
+    max-height: 25vw;
+}
