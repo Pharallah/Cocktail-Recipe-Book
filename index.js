@@ -72,6 +72,9 @@ function renderDrinks(drink) {
               } else if (p.innerText === drink.strInstructionsDE) {
                 p.innerText = drink.strInstructionsIT;
                 button.innerText = 'Change Language to English 🇬🇧';
+              } else if (p.innerText === drink.strInstructionsIT) {
+                p.innerText = drink.strInstructions;
+                button.innerText = 'Change Language to German 🇩🇪';
               }
         });
     });
