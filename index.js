@@ -44,5 +44,19 @@ function renderDrinks(drink) {
         instruct.innerText = 'Instructions:';
         p.innerText = drink.strInstructions;
         button.innerText = 'Change Language to German 🇩🇪'; 
+
+        // Creates the <li> for Ingredients
+        for (let i = 1; i <= 15; i++) {
+            const ingredientkey = `strIngredient${i}`;
+            const ingredientValue = drink[ingredientkey];
+            const measureKey = `strMeasure${i}`;
+            const measureValue = drink[measureKey];
+
+            if (ingredientValue !== null) {
+                const li = document.createElement('li');
+                li.innerText = `${measureValue} ${ingredientValue}`;
+                ul.appendChild(li);
+            }
+        }
     });
 }
