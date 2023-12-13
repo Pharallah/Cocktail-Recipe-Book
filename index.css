@@ -45,3 +45,7 @@ body {
     max-width: 75vw;
     max-height: 25vw;
 }
+
+#ingredients {
+    text-align: center;
+}
