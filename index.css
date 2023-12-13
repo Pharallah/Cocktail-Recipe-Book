@@ -1,3 +1,23 @@
 body {
     background-color: linen
 };
+
+#drink_container {
+    max-height: auto;
+    max-width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#drink_container span {
+    height: 70px;
+    width: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
