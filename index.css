@@ -49,3 +49,8 @@ body {
 #ingredients {
     text-align: center;
 }
+
+ul.ingList {
+    display: inline-block;
+    text-align: left;
+}
