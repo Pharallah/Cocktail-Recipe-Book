@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', fetchDrinks);
 
+// Initiates GET Request
 function fetchDrinks() {
     const drinkUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=cocktail';
     fetch(drinkUrl)
@@ -9,13 +10,14 @@ function fetchDrinks() {
     });
 }
 
+// Renders drinks to DOM
 function renderDrinks(drink) {
     const drinkContainer = document.querySelector('#drink_container');
     const span = document.createElement('span');
-    span.className = 'drink_selection';
     span.innerText = drink.strDrink;
     drinkContainer.appendChild(span);
 
+    // Adds Mouseover/Mouseout highlighting drink selection
     span.addEventListener('mouseover', e => {
         e.target.style.backgroundColor = 'red';
     });
@@ -24,6 +26,7 @@ function renderDrinks(drink) {
         e.target.style.backgroundColor = '';
     });
 
+    // Renders chosen drink's recipe
     span.addEventListener('click', () => {
         const drinkInfo = document.querySelector('#drink_info');
         const ingredients = document.querySelector('#ingredients');
@@ -56,8 +59,8 @@ function renderDrinks(drink) {
                 const li = document.createElement('li');
                 li.innerText = `${measureValue} ${ingredientValue}`;
                 ul.appendChild(li);
-            }
-        }
+            };
+        };
 
         drinkInfo.append(h2, img, h4);
         ingredients.innerHTML = '';
@@ -65,6 +68,7 @@ function renderDrinks(drink) {
         instructions.innerHTML = '';
         instructions.append(instruct, p, button);
 
+        // Change Language Feature
         button.addEventListener('click', () => {
             if (p.innerText === drink.strInstructions) {
                 p.innerText = drink.strInstructionsDE;
