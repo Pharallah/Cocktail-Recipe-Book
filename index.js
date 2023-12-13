@@ -8,3 +8,11 @@ function fetchDrinks() {
         drinks.drinks.forEach(drink => renderDrinks(drink))
     })
 }
+
+function renderDrinks(drink) {
+    const drinkContainer = document.querySelector('#drink_container');
+    const span = document.createElement('span');
+    span.className = 'drink_selection'
+    span.innerText = drink.strDrink;
+    drinkContainer.appendChild(span);
+}
