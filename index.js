@@ -58,5 +58,13 @@ function renderDrinks(drink) {
                 ul.appendChild(li);
             }
         }
+
+        drinkInfo.append(h2, img, h4);
+        ingredients.innerHTML = '';
+        ingredients.append(ul);
+        instructions.innerHTML = '';
+        instructions.append(instruct, p, button);
+
+        
     });
 }
