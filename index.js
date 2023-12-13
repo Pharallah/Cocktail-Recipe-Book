@@ -65,6 +65,11 @@ function renderDrinks(drink) {
         instructions.innerHTML = '';
         instructions.append(instruct, p, button);
 
-        
+        button.addEventListener('click', () => {
+            if (p.innerText === drink.strInstructions) {
+                p.innerText = drink.strInstructionsDE;
+                button.innerText = 'Change Language to Italian 🇮🇹';  
+              }
+        });
     });
 }
