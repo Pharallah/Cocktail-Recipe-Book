@@ -16,3 +16,4 @@ function renderDrinks(drink) {
     span.innerText = drink.strDrink;
     drinkContainer.appendChild(span);
 }
+
