@@ -18,10 +18,31 @@ function renderDrinks(drink) {
 
     span.addEventListener('mouseover', (e) => {
         e.target.style.backgroundColor = 'red';
-    })
+    });
 
     span.addEventListener('mouseout', e => {
         e.target.style.backgroundColor = '';
-    })
-}
+    });
 
+    span.addEventListener('click', () => {
+        const drinkInfo = document.querySelector('#drink_info');
+        const ingredients = document.querySelector('#ingredients');
+        const instructions = document.querySelector('#instructions');
+        drinkInfo.innerHTML = '';
+        const img = document.createElement('img');
+        const h2 = document.createElement('h2');
+        const h4 = document.createElement('h4');
+        const ul = document.createElement('ul');
+        const instruct = document.createElement('h4');
+        const p = document.createElement('p');
+        const button = document.createElement('button');
+
+        ul.className = 'ingList'
+        img.src = drink.strDrinkThumb;
+        h2.innerText = drink.strDrink;
+        h4.innerText = 'Ingredients:';
+        instruct.innerText = 'Instructions:';
+        p.innerText = drink.strInstructions;
+        button.innerText = 'Change Language to German 🇩🇪'; 
+    });
+}
