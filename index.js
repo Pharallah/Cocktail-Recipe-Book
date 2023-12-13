@@ -6,13 +6,13 @@ function fetchDrinks() {
     .then(res => res.json())
     .then(drinks => {
         drinks.drinks.forEach(drink => renderDrinks(drink))
-    })
+    });
 }
 
 function renderDrinks(drink) {
     const drinkContainer = document.querySelector('#drink_container');
     const span = document.createElement('span');
-    span.className = 'drink_selection'
+    span.className = 'drink_selection';
     span.innerText = drink.strDrink;
     drinkContainer.appendChild(span);
 
@@ -37,7 +37,7 @@ function renderDrinks(drink) {
         const p = document.createElement('p');
         const button = document.createElement('button');
 
-        ul.className = 'ingList'
+        ul.className = 'ingList';
         img.src = drink.strDrinkThumb;
         h2.innerText = drink.strDrink;
         h4.innerText = 'Ingredients:';
@@ -75,7 +75,7 @@ function renderDrinks(drink) {
               } else if (p.innerText === drink.strInstructionsIT) {
                 p.innerText = drink.strInstructions;
                 button.innerText = 'Change Language to German 🇩🇪';
-              }
+              };
         });
     });
 }
