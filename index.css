@@ -29,3 +29,14 @@ body {
     margin-right: 5px;
     margin-bottom: 5px;
 }
+
+#current_drink {
+    height: 75vh;
+    text-align: center;
+}
+
+#drink_info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
