@@ -19,7 +19,7 @@ function renderDrinks(drink) {
 
     // Adds Mouseover/Mouseout highlighting drink selection
     span.addEventListener('mouseover', e => {
-        e.target.style.backgroundColor = 'red';
+        e.target.style.backgroundColor = 'pink';
     });
 
     span.addEventListener('mouseout', e => {
