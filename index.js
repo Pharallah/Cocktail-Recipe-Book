@@ -15,5 +15,13 @@ function renderDrinks(drink) {
     span.className = 'drink_selection'
     span.innerText = drink.strDrink;
     drinkContainer.appendChild(span);
+
+    span.addEventListener('mouseover', (e) => {
+        e.target.style.backgroundColor = 'red';
+    })
+
+    span.addEventListener('mouseout', e => {
+        e.target.style.backgroundColor = '';
+    })
 }
 
