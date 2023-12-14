@@ -1,4 +1,4 @@
-# Cocktail-Book
+# Cocktail Recipe Book
 
 The Cocktail Recipe Book is a delightful resource for cocktail enthusiasts who want to master the art of crafting a variety of cocktails. Whether you're a novice or a seasoned mixologist, this project provides step-by-step instructions for creating a diverse range of cocktails. The recipes are available in English, German, and Italian, catering to a global audience.
 
