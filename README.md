@@ -8,7 +8,8 @@ Simply browse through the cocktail recipes to discover new and classic drinks. E
 
 ## Visuals
 
-![video1528136244](https://github.com/Pharallah/Cocktail-Book/assets/143658482/0ddc7ce8-e6d7-43f9-b48d-7ef9344faf6b)
+![untitled (Original) (1)](https://github.com/Pharallah/Cocktail-Recipe-Book/assets/143658482/663a739f-6f8c-4f84-bda8-cc02bddfd16e)
+
 
 ## Example
 
